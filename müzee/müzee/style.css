@@ -1,0 +1,130 @@
+body{
+    margin: 0px;
+    /* background-image: linear-gradient(red 10%,yellow); */
+}
+/* *{
+   tüm tagler anlamına gelin, hepsini etkiler.
+} */
+#page{
+    width: 800px;
+    height: 800px;
+    background-color: darkcyan;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 50px;
+    box-sizing: border-box; */
+    
+}
+header{
+    height:220px;
+    background-image: url("images/banner.jpg");
+    background-size: 800px 220px;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+}
+nav{
+    height: 30px;
+    background-color: rgb(109, 56, 4);
+}
+/* navın içerisindeki ulun  */
+nav ul{
+    margin:0px;
+    padding:0px;
+    /* Listenin önündeki itemi belirler. */
+    list-style-type: none;
+
+}
+ nav li{
+     float:left;
+    /* width:160px;
+    text-align:center;
+    height: 30px;
+    padding-top:5px;
+    box-sizing:border-box;  */
+    /* padding kullanıldığında box sizing mutlaka kullanılır yoksa heightın üzerine ekler. */
+
+    /* line-height: 30px; */
+} 
+
+nav li a{
+    display: block;
+    width:160px;
+    color:burlywood;
+    text-decoration: none;
+    font-size:20px;  
+    line-height: 30px;
+    text-align: center;
+}
+/* nav:hover{
+    background-color:red ;
+} */
+
+nav li a:hover{
+    color:white;
+    background-color:rgb(148, 102, 29) ;
+}
+/* nav li:hover{
+    background-color: rgb(148, 102, 29);
+} */
+ main{
+    padding:20px;
+    background-color: white;
+    height:520px;
+    box-sizing: border-box;
+    /* padding varsa mutlaka box-sizing kullanılır yoksa yüksekliğin üzerine eklenir. */
+ }
+
+ #bolum1 article{
+    width: 490px;
+    height:260px;
+    float:left;
+    
+ }
+ #bolum1 div{
+    width:250px;
+    height: 260px;
+    border-radius: 10px;
+    background-image: url("images/Musee_du_Louvre-List_of_tourist_attractions_in_Paris-Louvre_Palace-Pavillon_de_lHorloge-image.jpg");
+    background-size: 250px 260px;
+    float:right;
+    
+ }
+ /* Floatı olan yapı iskeletten kopar alan işgal edemez. Div içerisinde floatlı yapı varsa yüksekliğini içindeki nesneden alamıyor. */
+
+ #bolum2 div{
+    width: 175px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(109, 56, 4);
+    margin-right: 20px;
+    float:left;
+    margin-top:20px;
+    
+ }
+ #bolum2 img{
+    width: 165px;
+    height: 160px;
+
+ }
+ #bolum2 h2{
+    margin:0px;
+    line-height: 30px;
+   
+ }
+ #bolum2 a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+
+ }
+ footer{
+    height:30px;
+    text-align: right;
+    padding:10px;
+    box-sizing: border-box;
+    color: rgb(148, 102, 29) ;
+    background-color:  rgb(109, 56, 4);
+    font-size: 10px;
+
+ }

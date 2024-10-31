@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #kutu1{
+    width:300px;
+    height: 300px;
+    background-color: red;
+    float:left;
+    /* kutu sola yaslanacak öteki kutuda left yapılır ve o da kutunun soluna geçer. */
+ }
+
+ /* biri float alıp öteki float değeri almazsa birincinin floatından etkilenir. Arkasına geçer. */
+ #kutu2{
+    width:300px;
+    height: 300px;
+    background-color: yellow;
+    float:left;
+ }
+ /* blok olan iki yapının yan yana olabilmesi için float ya da flex yapıları almasıdır. */
+ #kutu3{
+    width:700px;
+    height: 400px;
+    background-color: aqua;
+    clear:both;
+    /* clear kendinden önceki değer neyse onu alır. Both ise her iki değere bakmaksızın floatın etkisini temizler. */
+    /* kendinden önceki floatlardan etkilenmesini clear ile etkisiz hale getirebiliriz. */
+ }
+ #kutu4{
+    width:700px;
+    height: 400px;
+    background-color:black;
+    float:left;}
+    </style>
+</head>
+<body>
+    <!-- divler bloktur bulunduğu satırın genişliğini kullanır. -->
+    <div id="kutu1"></div>
+    <div id="kutu2"></div>
+    <div id="kutu3"></div>
+    <div id="kutu4">
+        <a href="">tıkla</a>
+        <span>Serap</span>
+        <!-- span ve a inline olduğu için yanyana görünürler. -->
+    </div>
+</body>
+</html>

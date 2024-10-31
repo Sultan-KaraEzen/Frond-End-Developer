@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Tüm paragraflar */
+        /* p{}  */
+        /* div p{}Divin içindekiler anlamında boşluk içindekiler anlamında */
+
+        #buyukdiv p {
+            color:red;
+        }
+        /* Sadece childlara uygulatılacaksa > işareti kullanılır. */
+        #buyukdiv>p{
+            font-style:italic;
+        }
+        /* Büyükdiv ile aynı seviyedeki kardeşe özellik verir.Büyükdivden sonra gelen ilk paragraf */
+        #buyukdiv+p{
+            font-size: 30px;
+        }
+        /* Büyükdivden sonra gelen aynı seviyedeki kardeşler özelliği alır. */
+        #buyukdiv~p{
+            font-weight: bolder;
+        }
+        .bolum{}
+
+        .bolum p{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="buyukdiv">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+        </p>
+        <div id="kucukdiv">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+            </p>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam maxime odio corporis repellendus vel hic nulla neque dolore aliquid. Temporibus culpa blanditiis in, enim architecto accusamus nobis eveniet harum.
+    </p>
+    <div class="bolum">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptates, assumenda exercitationem fuga excepturi delectus optio iure dolorum tempore perferendis voluptatibus dignissimos odit totam, nostrum labore voluptatum earum! Vel, illo.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit molestiae doloribus in sint veritatis a fugiat distinctio consequuntur, sunt autem dolore alias impedit placeat aspernatur sequi voluptates! Harum, voluptatibus.
+
+        </p>
+    </div>
+    
+</body>
+</html>
